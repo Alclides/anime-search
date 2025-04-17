@@ -1,14 +1,27 @@
-import {Circle, Square} from '@/components/Geo';
- 
-const Page = () => {
-  return (
-    <div>
-      <p className="font-bold text-5xl">Ola Mundo!</p>
+'use client'
+import { useEffect, useState } from 'react';
+import { StudentTable } from '@/components/StudentTable';
+import { StudentsList } from '@/data/Students';
+import { AnimeSearch } from '@/components/apidata';
 
-      <Square/>
-      <Circle/>
+import Card3D from '@/components/Card3d';
+
+
+const Page = () => {
+    
+  return ( 
+    <div className='w-vh h- flex justify-center items-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500'>
+    
+    
+      <AnimeSearch/>
+    
+    
+    
     </div>
     
+      
+   
 )
+
 }
 export default Page;
