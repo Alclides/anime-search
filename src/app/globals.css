@@ -44,5 +44,6 @@ body {
 
 /* Efeito quando passar o mouse */
 .destaque:hover {
-  transform: rotateX(20deg) rotateY(20deg) scale3d(1.1, 1.1, 1.1);
+  will-change: transform;
+  transform: rotateX(15deg) rotateY(15deg) scale3d(1, 1, 1);
 }
